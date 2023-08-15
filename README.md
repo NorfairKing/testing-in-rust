@@ -57,6 +57,7 @@ A comparison of testing features in Rust.
 | Iterative testing to diagnose flakiness                                                   | ✖️ [2] |
 | Automatic flakiness diagnostics                                                           | ✖️ |
 | Flakiness combinators to practically deal with flakiness                                  | ✖️ |
+| Test suite profiling with graphs                                                          | ✖️ |
 
 * ✔️: Supported 
 * Lib: Possible with an extra library
