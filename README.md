@@ -70,3 +70,8 @@ Please let me know if I made a mistake anywhere, and feel free to fill in the qu
 
 [1]: I've seen this feature discussed but it's not in my version of cargo yet.
 [2]: It's been requested: https://github.com/rust-lang/cargo/issues/11354
+
+### Definitions
+
+The list of features above was taken from [the sydtest readme](https://github.com/NorfairKing/sydtest).
+The features are described in detail there.
