@@ -37,9 +37,10 @@
         name = "hello-world-shell";
         buildInputs = (with pkgs; [
           cargo
+          cargo-nextest
           rust-analyzer
-          rustfmt
           rustc
+          rustfmt
         ]) ++ (with pre-commit-hooks.packages.${system};
           [
             nixpkgs-fmt
