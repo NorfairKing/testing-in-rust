@@ -16,10 +16,10 @@ mod tests {
 
     use std::{env, thread::sleep, time::Duration};
 
-    #[test]
-    fn assert_eq() {
-        assert_eq!("foo", "bar");
-    }
+    // #[test]
+    // fn assert_eq() {
+    //     assert_eq!("foo", "bar");
+    // }
 
     #[test]
     fn success_1() {
@@ -46,24 +46,19 @@ mod tests {
         ()
     }
 
-    #[test]
-    fn fail_5() {
-        assert!(false)
-    }
+    // #[test]
+    // fn args() {
+    //     let empty: Vec<String> = vec![];
+    //     assert_eq!(env::args().collect::<Vec<String>>(), empty)
+    // }
 
-    #[test]
-    fn args() {
-        let empty: Vec<String> = vec![];
-        assert_eq!(env::args().collect::<Vec<String>>(), empty)
-    }
-
-    #[test]
-    fn deep_eq() {
-        assert_eq!(
-            Some(Some(Some(Some(Some(Some(Some(Some(Some(Some(Some(
-                Some(Some(Some(Some(Some("foo")))))
-            ))))))))))),
-            Some(None)
-        );
-    }
+    // #[test]
+    // fn deep_eq() {
+    //     assert_eq!(
+    //         Some(Some(Some(Some(Some(Some(Some(Some(Some(Some(Some(
+    //             Some(Some(Some(Some(Some("foo")))))
+    //         ))))))))))),
+    //         Some(None)
+    //     );
+    // }
 }

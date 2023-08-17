@@ -22,7 +22,10 @@
     in
     {
       overlays.${system} = import ./nix/overlay.nix;
-      packages.${system}.rspec-example = pkgs.rspec-example;
+      packages.${system} = {
+        rspec-example = pkgs.rspec-example;
+        nextest-example = pkgs.nextest-example;
+      };
       checks.${system} = self.packages.${system} // {
         shell = self.devShells.${system}.default;
         pre-commit = pre-commit-hooks.lib.${system}.run {
